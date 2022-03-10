@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: darkslateblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    color: gainsboro;
+    background-color: #645e96;
+    text-decoration: underline;
+}
+
+h2 {
+    color: rgb(65, 223, 144);
+
+}
+
+p {
+    text-align: justify;
+
+}
+
+a {
+    color: gainsboro;
+}
