@@ -13,6 +13,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -25,8 +26,24 @@
             color: #fdfdfd;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(117, 189, 138);
+        }
+
         td.num {
             text-align: right;
+        }
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(odd) { /*2n-1*/
+            background-color: #90ee90c0;
+        }
+        tbody > tr:nth-child(even) { /*2n*/
+            background-color: rgba(144, 238, 144, 0.5);
         }
     </style>
 </head>
@@ -34,6 +51,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes: 
          table
+           caption
            thead
                tr, td, th
            tbody
@@ -42,10 +60,11 @@
                tr, td, th
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,9 +178,22 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num"><strong>213,3 milhões</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam ducimus accusamus vel doloribus autem alias deserunt tenetur, consectetur facere suscipit labore rerum nam harum aperiam numquam, qui, id veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id odio, placeat tempore nemo natus voluptate, optio porro aut suscipit obcaecati laudantium iste molestias sed pariatur qui aperiam distinctio? Dolore.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto praesentium voluptatibus repellendus assumenda ullam ad sed eveniet, accusantium sint voluptates autem quidem quam iste distinctio ab fugiat, qui animi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores suscipit rem quaerat qui veniam, quam, optio, quibusdam laborum voluptas repellendus voluptates repellat numquam omnis? Sint numquam doloremque molestias pariatur magni!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam ducimus accusamus vel doloribus autem alias deserunt tenetur, consectetur facere suscipit labore rerum nam harum aperiam numquam, qui, id veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id odio, placeat tempore nemo natus voluptate, optio porro aut suscipit obcaecati laudantium iste molestias sed pariatur qui aperiam distinctio? Dolore.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto praesentium voluptatibus repellendus assumenda ullam ad sed eveniet, accusantium sint voluptates autem quidem quam iste distinctio ab fugiat, qui animi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores suscipit rem quaerat qui veniam, quam, optio, quibusdam laborum voluptas repellendus voluptates repellat numquam omnis? Sint numquam doloremque molestias pariatur magni!
+        </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam ducimus accusamus vel doloribus autem alias deserunt tenetur, consectetur facere suscipit labore rerum nam harum aperiam numquam, qui, id veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id odio, placeat tempore nemo natus voluptate, optio porro aut suscipit obcaecati laudantium iste molestias sed pariatur qui aperiam distinctio? Dolore.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto praesentium voluptatibus repellendus assumenda ullam ad sed eveniet, accusantium sint voluptates autem quidem quam iste distinctio ab fugiat, qui animi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores suscipit rem quaerat qui veniam, quam, optio, quibusdam laborum voluptas repellendus voluptates repellat numquam omnis? Sint numquam doloremque molestias pariatur magni!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam ducimus accusamus vel doloribus autem alias deserunt tenetur, consectetur facere suscipit labore rerum nam harum aperiam numquam, qui, id veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id odio, placeat tempore nemo natus voluptate, optio porro aut suscipit obcaecati laudantium iste molestias sed pariatur qui aperiam distinctio? Dolore.
+        
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto praesentium voluptatibus repellendus assumenda ullam ad sed eveniet, accusantium sint voluptates autem quidem quam iste distinctio ab fugiat, qui animi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores suscipit rem quaerat qui veniam, quam, optio, quibusdam laborum voluptas repellendus voluptates repellat numquam omnis? Sint numquam doloremque molestias pariatur magni!
+    </p>
 </body>
 </html>
